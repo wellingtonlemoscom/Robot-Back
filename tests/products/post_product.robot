@@ -31,7 +31,7 @@ Required title
     ${resp}=        Post Product        ${payload}     ${token}
     
     Status Should Be    400     ${resp}
-    Should Be Equal     ${resp.json()['msg']}       Oops! title cannot be empty
+    Should Be Equal     ${resp.json()['msg']}       Oops! title cannot be empt
 
     Dictionary Should Contain Value     ${resp.json()}        Oops! title cannot be empty
 
